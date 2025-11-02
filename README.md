@@ -36,3 +36,11 @@ To clean up (remove temporary files and stop the web server) after tests:
 ```
 make clean
 ```
+### Quick Tip: Validating Your Data
+
+Before running the SDG platform, ensure your CSV data files:
+- Include a `year` column formatted as YYYY
+- Include a numeric `value` column without text characters
+- Match indicator codes exactly as defined in `indicator_metadata.csv`
+
+These simple checks prevent import errors and improve reproducibility for new contributors.
